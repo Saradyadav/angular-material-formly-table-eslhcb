@@ -1,0 +1,42 @@
+<div class="container">
+<div class="cards-container1-row">
+  <mat-card class="card1">
+    <h5>Frontend FTP Details:</h5>
+    <formly-form
+      [form]="form"
+      [fields]="card1Fields"
+      [model]="card"
+    ></formly-form>
+  </mat-card>
+
+  <mat-card class="card2">
+    <h5>Admin FTP Details</h5>
+    <formly-form  [form]="form" [fields]="card2Fields" [model]="card"></formly-form>
+  </mat-card>
+
+  <mat-card class="card3">
+    <h5>Database Connection Details:</h5>
+    <formly-form  [form]="form" [fields]="card3Fields" ></formly-form>
+  </mat-card>
+</div>
+
+
+<div class="cards-container2-row">
+  <mat-card class="card4">
+  <h5>Allowed IPs :</h5>
+  <formly-form  [form]="form" [fields]="card4Fields" ></formly-form>
+</mat-card>
+</div>
+
+<div class="cards-container3-row">
+<mat-card class="card5">
+<h5>SMTP Details:</h5>
+<formly-form  [form]="form" [fields]="card5Fields"  ></formly-form>
+</mat-card>
+
+<mat-card class="card6">
+<h5>Blob Storage Details:</h5>
+<formly-form  [form]="form" [fields]="card6Fields" ></formly-form>
+</mat-card>
+</div>
+</div>
